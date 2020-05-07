@@ -77,4 +77,10 @@ For Parallel panels
 * LiquidCrystalFast from https://www.pjrc.com/teensy/td_libs_LiquidCrystal.html
 
 
+Nikos Chalikias notes
+---------------------
+To have a succesful compilation with Arduino IDE 1.8.11, for the Parallel LCD, I did the following:
+* I have included all dependencies in the project folder
+* I changed some some instances like #include <Encoder.h> to #include "Encoder.h"
+* I replaced  all references to wiring.h with wiring_private.h --> [https://stackoverflow.com/questions/42826755/wiring-h-missing-in-arduino/42827754 ]
 
