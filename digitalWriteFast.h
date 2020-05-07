@@ -1,5 +1,5 @@
 #include "Arduino.h"
-#include <wiring.h>
+#include <wiring_private.h>
 
 #define BIT_READ(value, bit) (((value) >> (bit)) & 0x01)
 #define BIT_SET(value, bit) ((value) |= (1UL << (bit)))
@@ -157,4 +157,3 @@ else pinMode((P), (V)); \
 	( BIT_READ(*digitalPinToPINReg(P), __digitalPinToBit(P))) ) : \
 	digitalRead((P))
 #endif
-

@@ -2,7 +2,7 @@
 #include "Arduino.h"
 #include "digitalWriteFast.h"
 
-#include <Encoder.h>
+#include "Encoder.h"
 #include "RingBuffer.h"
 
 // Pins used
@@ -18,8 +18,8 @@ SS   -> D10
 */
 
 // select the Panel being used
-#define VIKI 1
-//#define PARALLEL 1
+//#define VIKI 1
+#define PARALLEL 1
 
 #ifdef VIKI
 #include "LiquidTWI2.h"
@@ -309,4 +309,3 @@ void loop (void)
 		last_ms= now;
 	}
 }
-

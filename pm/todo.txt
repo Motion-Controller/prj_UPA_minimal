@@ -1,0 +1,5 @@
+x Add all dependencies mentioned in readme in project foldes
+x Compile for parallel LCD fixing include errors
+x replace all references to wiring.h with wiring_private.h [https://stackoverflow.com/questions/42826755/wiring-h-missing-in-arduino/42827754]
+x replace some include <....> with "...."
+x Compile succesfully
