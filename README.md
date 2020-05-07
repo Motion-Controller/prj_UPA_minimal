@@ -82,7 +82,15 @@ For Parallel panels
 Nikos Chalikias notes
 ---------------------
 To have a succesful compilation with Arduino IDE 1.8.11, for the Parallel LCD, I did the following:
-* I have included all dependencies in the project folder
-* I changed some some instances like #include <Encoder.h> to #include "Encoder.h"
-* I replaced  all references to wiring.h with wiring_private.h --> [https://stackoverflow.com/questions/42826755/wiring-h-missing-in-arduino/42827754 ]
+* Included all dependencies in the project folder
+* Changed some instances like #include <Encoder.h>, to #include "Encoder.h"
+* Replaced  all references to wiring.h with wiring_private.h  
+
+Links:
+* http://smoothieware.org/panel
+* https://stackoverflow.com/questions/42826755/wiring-h-missing-in-arduino/42827754
+* https://github.com/nikoschalikias/firm-universal-panel-adapter
+
+
+
 

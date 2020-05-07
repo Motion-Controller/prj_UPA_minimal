@@ -3,3 +3,9 @@ x Compile for parallel LCD fixing include errors
 x replace all references to wiring.h with wiring_private.h [https://stackoverflow.com/questions/42826755/wiring-h-missing-in-arduino/42827754]
 x replace some include <....> with "...."
 x Compile succesfully
+x Add project to Sourcetree and commit
+x Create remote GIThub repository and push
+x Update README with my notes
+x Celebrate :-)
+Program a board
+Connect to LCD and n-PRO-3DP boards and start testing
