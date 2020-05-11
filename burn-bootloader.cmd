@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Arduino\hardware\tools\avr\bin\avrdude" -C "C:\Program Files (x86)\Arduino\hardware\tools\avr\etc\avrdude.conf" -v -p atmega2560 -c stk500v2 -Pusb -U flash:w:"C:\Program Files (x86)\Arduino\hardware\arduino\avr\bootloaders\stk500v2\stk500boot_v2_mega2560.hex":i -U lock:w:0x0F:m 

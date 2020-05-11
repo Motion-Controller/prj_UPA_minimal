@@ -7,5 +7,6 @@ x Add project to Sourcetree and commit
 x Create remote GIThub repository and push
 x Update README with my notes
 x Celebrate :-)
-Program a board
+x Order and get Arduino Nano boards
+x Program a board
 Connect to LCD and n-PRO-3DP boards and start testing
