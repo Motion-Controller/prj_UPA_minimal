@@ -1,0 +1,1 @@
+/opt/arduino-1.0.5/hardware/tools/avrdude -C/opt/arduino/hardware/tools/avrdude.conf -v -patmega328p -carduino -PCOM67 -b115200 -D -Uflash:w:C:\Users\NIKOLA~1.CHA\AppData\Local\Temp\arduino_build_927696/universal-panel-adapter.ino.hex:i 

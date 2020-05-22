@@ -9,4 +9,11 @@ x Update README with my notes
 x Celebrate :-)
 x Order and get Arduino Nano boards
 x Program a board
-Connect to LCD and n-PRO-3DP boards and start testing
+x Connect to LCD and n-PRO-3DP boards and start testing [it works]
+Extract the SPI protocoll form upa.cpp, make a diagram to document it
+create mbed project and modify until compiled for STM32F103R
+x Program Atmega328p DIP ics
+x Create Minimal Schematic for Simple 43x33mm board that interfaces LCD to n-PRO-3DP
+x Create Minimal Implementation Block Diagram
+Add slideck content to readme.md
+
