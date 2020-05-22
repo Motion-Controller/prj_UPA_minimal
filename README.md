@@ -46,13 +46,12 @@ width="400"
 
 <img
 src="doc/minimal-schematic.JPG"
-width="600"
+width="500"
 title="minimal Schematic"
-padding-right:400px
-/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <img
+/> &nbsp;&nbsp; <img
 src="doc/minimal-perforated-board.jpg"
 title="minimal Perforated board"
-width="600"
+width="500"
 />
 
 ---
