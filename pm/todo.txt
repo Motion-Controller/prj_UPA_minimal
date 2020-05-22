@@ -18,4 +18,6 @@ x Create Minimal Implementation Block Diagram
 x Add slideck content to readme.md
 Add snapshot picture from compilation
 Add photo from arduino programming boards setup
+Add LCD purchasing links from standard suppliers
+Cleaner Block diagram imagec (probably resolution to be reduced)
 

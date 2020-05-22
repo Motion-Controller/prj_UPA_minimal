@@ -15,11 +15,11 @@ The firmware is open source, called Universal Panel Adapter (UPA), is available 
 and 
 can be used with Arduino boards or a plain ATmega328 microprocessor. 
 
-On this small project [prj_UPA_minimal]([https://github.com/nikoschalikias/prj_UPA_minimal) we deploy UPA firmware on a minimal and tidy implementation, to be used with a 3D printer controller with SPI only GLCD interface like [n-PRO-3DP](https://www.n-blocks.net/nmodules/doku.php?id=nblocks:ni-pro-3dp), [SmoothieBoard](http://smoothieware.org/smoothieboard) and other boards driven by Smoothieware.  
+On this small project [prj_UPA_minimal]([https://github.com/nikoschalikias/prj_UPA_minimal), we deploy UPA firmware on a minimal and tidy implementation, to be used with a 3D printer controller with SPI only GLCD interface like [n-PRO-3DP](https://www.n-blocks.net/nmodules/doku.php?id=nblocks:ni-pro-3dp), [SmoothieBoard](http://smoothieware.org/smoothieboard) and other boards driven by Smoothieware.  
 With the UPA minimal Board, any 20x4 LCD can be used with Smoothieware.
 
 
-The Board is developed in iterations: starting with a Breadboard first iteration, a perforated-board 2nd iteration and ending with a PCB
+The Board is developed in iterations: starting with a Breadboard 1st iteration, a perforated-board 2nd iteration and  a PCB 3d iteration
 
 ---
 Block Diagram
@@ -30,7 +30,7 @@ src="doc/BLOCK-DIAGRAM-01.jpg"
 />
 
 ---
-1st  implemetation with Arduino-Nano on breadboard, to be replaced with the Minimal version
+1st  iteration: with Arduino-Nano on breadboard, to be replaced with the Minimal version
 
 
 <img
@@ -38,7 +38,7 @@ src="doc/UniversalPanelAdapter.N-PRO-3DP-01.jpg"
 />
 
 ---
-Minimal Schematic, 2nd iteration
+2nd iteration: Minimal Schematic
 
 
 <img
@@ -46,7 +46,7 @@ src="doc/minimal-schematic.JPG"
 />
 
 ---
-Minimal Perforated-Board, 2nd iteration
+2nd iteration: Minimal Perforated-Board 
 
 
 <img
@@ -54,11 +54,11 @@ src="doc/minimal-perforated-board.jpg"
 />
 
 ---
-Work in progress: 3nd iteration
+3nd iteration: In progress...
 
 ---
 
-Nikos  notes on compilation
+Notes on compilation
 ---------------------
 To have a succesful compilation with Arduino IDE 1.8.11, for the Parallel LCD, I did the following:
 * Included all dependencies in the project folder
