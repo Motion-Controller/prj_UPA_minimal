@@ -1,51 +1,36 @@
-# prj_UPA_minimal:  
-####  UPA firmware on a minimal and tidy hardware implementation, to be used with n-PRO-3DP 
-####  Based on https://github.com/wolfmanjm/universal-panel-adapter
+# prj_UPA_minimal: 
+####  Easy to get, parallel 20x4 LCD, with Smoothieware 
+####  Minimal and tidy hardware for Universal Panel Adapter firmware 
 
 
 ---
-Smoothieware/Smoothieboard does not have an option for using character LCD. It can drive only graphical SPI LCDs.
+[Smoothieware](http://smoothieware.org/smoothieboard) does not have an option for driving character LCD. It can only drive graphical SPI LCDs.
 This is probably due to lack of GPIO pins (Ethernet functionality is using a lot of GPIO…)
 
-Smoothieboard developer offers an add-on board, that can translate the SPI bitstream for 
-I2C LCDs 
-The more common PARALLEL LCD
-This board has a complex shape and fits only on Smoothieboard
-But
+Smoothieboard developer offers an [add-on board](http://smoothieware.org/rrdglcdadapter), that can translate the SPI bitstream for 
+I2C LCD and (The more common) parallel LCD.  
+This board has a complex shape and fits only on Smoothieboard,
+but
 The firmware is open source, called Universal Panel Adapter (UPA), is available in Github 
 and 
-can be used with  Arduino boards or plain ATmega328 microprocessor. 
+can be used with Arduino boards or a plain ATmega328 microprocessor. 
 
-On this mini project https://github.com/nikoschalikias/firm-universal-panel-adapter  we deploy UPA firmware on a minimal and tidy implementation, to be used with n-PRO-3DP 
+On this small project [prj_UPA_minimal]([https://github.com/nikoschalikias/prj_UPA_minimal) we deploy UPA firmware on a minimal and tidy implementation, to be used with a 3D printer controller with SPI only GLCD interface like [n-PRO-3DP](https://www.n-blocks.net/nmodules/doku.php?id=nblocks:ni-pro-3dp), [SmoothieBoard](http://smoothieware.org/smoothieboard) and other boards driven by Smoothieware.  
+With the UPA minimal Board, any 20x4 LCD can be used with Smoothieware.
 
 
+The Board is developed in iterations: starting with a Breadboard first iteration, a perforated-board 2nd iteration and ending with a PCB
 
 ---
 Block Diagram
 
 
 <img
-src="doc/BLOCK-DIAGRAM.jpg"
+src="doc/BLOCK-DIAGRAM-01.jpg"
 />
 
 ---
-Minimal Schematic
-
-
-<img
-src="doc/minimal-schematic.JPG"
-/>
-
----
-Minimal Perforated-Board
-
-
-<img
-src="doc/minimal-perforated-board.jpg"
-/>
-
----
-Early implemetation, to be replaced with the Minimal version
+1st  implemetation with Arduino-Nano on breadboard, to be replaced with the Minimal version
 
 
 <img
@@ -53,10 +38,40 @@ src="doc/UniversalPanelAdapter.N-PRO-3DP-01.jpg"
 />
 
 ---
+Minimal Schematic, 2nd iteration
 
 
+<img
+src="doc/minimal-schematic.JPG"
+/>
 
-nikos notes at the bottom
+---
+Minimal Perforated-Board, 2nd iteration
+
+
+<img
+src="doc/minimal-perforated-board.jpg"
+/>
+
+---
+Work in progress: 3nd iteration
+
+---
+
+Nikos  notes on compilation
+---------------------
+To have a succesful compilation with Arduino IDE 1.8.11, for the Parallel LCD, I did the following:
+* Included all dependencies in the project folder
+* Changed some instances like #include <Encoder.h>, to #include "Encoder.h"
+* Replaced  all references to wiring.h with wiring_private.h  
+
+Links:
+* http://smoothieware.org/panel
+* https://stackoverflow.com/questions/42826755/wiring-h-missing-in-arduino/42827754
+* https://github.com/nikoschalikias/firm-universal-panel-adapter
+
+---
+Below is the readme file from [wolfmanjm firmware: universal-panel-adapter](https://github.com/wolfmanjm/universal-panel-adapter)
 
 universal-panel-adapter
 =======================
@@ -137,17 +152,7 @@ For Parallel panels
 * LiquidCrystalFast from https://www.pjrc.com/teensy/td_libs_LiquidCrystal.html
 
 
-Nikos  notes on compilation
----------------------
-To have a succesful compilation with Arduino IDE 1.8.11, for the Parallel LCD, I did the following:
-* Included all dependencies in the project folder
-* Changed some instances like #include <Encoder.h>, to #include "Encoder.h"
-* Replaced  all references to wiring.h with wiring_private.h  
 
-Links:
-* http://smoothieware.org/panel
-* https://stackoverflow.com/questions/42826755/wiring-h-missing-in-arduino/42827754
-* https://github.com/nikoschalikias/firm-universal-panel-adapter
 
 
 

@@ -15,5 +15,7 @@ create mbed project and modify until compiled for STM32F103R
 x Program Atmega328p DIP ics
 x Create Minimal Schematic for Simple 43x33mm board that interfaces LCD to n-PRO-3DP
 x Create Minimal Implementation Block Diagram
-Add slideck content to readme.md
+x Add slideck content to readme.md
+Add snapshot picture from compilation
+Add photo from arduino programming boards setup
 
