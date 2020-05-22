@@ -27,6 +27,7 @@ Block Diagram
 
 <img
 src="doc/BLOCK-DIAGRAM-01.jpg"
+width="400"
 />
 
 ---
@@ -35,22 +36,23 @@ src="doc/BLOCK-DIAGRAM-01.jpg"
 
 <img
 src="doc/UniversalPanelAdapter.N-PRO-3DP-01.jpg"
+title="1st iteration implementation"
+width="400"
 />
 
 ---
-2nd iteration: Minimal Schematic
+2nd iteration: Minimal Schematic implemented in a 43mm x 33mm n-Blocks perforated board
 
 
 <img
 src="doc/minimal-schematic.JPG"
-/>
-
----
-2nd iteration: Minimal Perforated-Board 
-
-
-<img
+width="600"
+title="minimal Schematic"
+padding-right:400px
+/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <img
 src="doc/minimal-perforated-board.jpg"
+title="minimal Perforated board"
+width="600"
 />
 
 ---
