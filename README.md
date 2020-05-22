@@ -1,3 +1,61 @@
+# prj_UPA_minimal:  
+####  UPA firmware on a minimal and tidy hardware implementation, to be used with n-PRO-3DP 
+####  Based on https://github.com/wolfmanjm/universal-panel-adapter
+
+
+---
+Smoothieware/Smoothieboard does not have an option for using character LCD. It can drive only graphical SPI LCDs.
+This is probably due to lack of GPIO pins (Ethernet functionality is using a lot of GPIO…)
+
+Smoothieboard developer offers an add-on board, that can translate the SPI bitstream for 
+I2C LCDs 
+The more common PARALLEL LCD
+This board has a complex shape and fits only on Smoothieboard
+But
+The firmware is open source, called Universal Panel Adapter (UPA), is available in Github 
+and 
+can be used with  Arduino boards or plain ATmega328 microprocessor. 
+
+On this mini project https://github.com/nikoschalikias/firm-universal-panel-adapter  we deploy UPA firmware on a minimal and tidy implementation, to be used with n-PRO-3DP 
+
+
+
+---
+Block Diagram
+
+
+<img
+src="doc/BLOCK-DIAGRAM.jpg"
+/>
+
+---
+Minimal Schematic
+
+
+<img
+src="doc/minimal-schematic.JPG"
+/>
+
+---
+Minimal Perforated-Board
+
+
+<img
+src="doc/minimal-perforated-board.jpg"
+/>
+
+---
+Early implemetation, to be replaced with the Minimal version
+
+
+<img
+src="doc/UniversalPanelAdapter.N-PRO-3DP-01.jpg"
+/>
+
+---
+
+
+
 nikos notes at the bottom
 
 universal-panel-adapter
@@ -79,7 +137,7 @@ For Parallel panels
 * LiquidCrystalFast from https://www.pjrc.com/teensy/td_libs_LiquidCrystal.html
 
 
-Nikos Chalikias notes
+Nikos  notes on compilation
 ---------------------
 To have a succesful compilation with Arduino IDE 1.8.11, for the Parallel LCD, I did the following:
 * Included all dependencies in the project folder
