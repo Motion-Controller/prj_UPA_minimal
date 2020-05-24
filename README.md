@@ -46,16 +46,31 @@ width="400"
 
 <img
 src="doc/minimal-schematic.JPG"
-width="500"
+width="600"
 title="minimal Schematic"
 /> &nbsp;&nbsp; <img
 src="doc/minimal-perforated-board.jpg"
 title="minimal Perforated board"
-width="500"
+width="600"
 />
 
 ---
-3nd iteration: In progress...
+3nd iteration: Minimal Schematic implemented in a 43mm x 33mm n-Blocks form factor PCB [UPA-DIP](https://github.com/nikoschalikias/UPA-DIP)
+
+
+<img
+src="doc/PCB-01.JPG"
+width="200"
+title="pcb 3d model top side"
+/> &nbsp;&nbsp; <img
+src="doc/PCB-01.JPG"
+title="pcb 3d model bottom side"
+width="200"
+/> &nbsp;&nbsp; <img
+src="doc/PCB-03.JPG"
+title="pcb 2D"
+width="200"
+/>
 
 ---
 
