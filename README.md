@@ -4,25 +4,24 @@
 
 
 ---
-[Smoothieware](http://smoothieware.org/smoothieboard) does not have an option for driving character LCD. It can only drive graphical SPI LCDs.
+###### The Problem:  
+[Smoothieware](http://smoothieware.org/smoothieboard) does not have an option for driving character LCDs with Parallel interface. It can only drive graphical SPI LCDs.
 This is probably due to lack of GPIO pins (Ethernet functionality is using a lot of GPIO…)
 
-Smoothieboard developer offers an [add-on board](http://smoothieware.org/rrdglcdadapter), that can translate the SPI bitstream for 
-I2C LCD and (The more common) parallel LCD.  
-This board has a complex shape and fits only on Smoothieboard,
-but
-The firmware is open source, called Universal Panel Adapter (UPA), is available in Github 
-and 
-can be used with Arduino boards or a plain ATmega328 microprocessor. 
+Smoothieboard developer offers an [add-on board](http://smoothieware.org/rrdglcdadapter), that can translate the SPI-bitstream to I2C-LCD or to (The more common) parallel-LCD.  
+This board has a complex shape and fits only on Smoothieboard. The firmware is open source, called Universal Panel Adapter (UPA) and  is available in Github 
 
-On this small project [prj_UPA_minimal]([https://github.com/nikoschalikias/prj_UPA_minimal), we deploy UPA firmware on a minimal and tidy implementation, to be used with a 3D printer controller with SPI only GLCD interface like [n-PRO-3DP](https://www.n-blocks.net/nmodules/doku.php?id=nblocks:ni-pro-3dp), [SmoothieBoard](http://smoothieware.org/smoothieboard) and other boards driven by Smoothieware.  
-With the UPA minimal Board, any 20x4 LCD can be used with Smoothieware.
+
+###### A Solution:  
+UPA firmware can be used with Arduino boards or a plain ATmega328 microprocessor. 
+On this small project [prj_UPA_minimal]([https://github.com/nikoschalikias/prj_UPA_minimal), we deploy UPA firmware on a minimal and tidy hardware implementation, to be used with a 3D printer controller with SPI only GLCD interface like [n-PRO-3DP](https://www.n-blocks.net/nmodules/doku.php?id=nblocks:ni-pro-3dp), [SmoothieBoard](http://smoothieware.org/smoothieboard) and other boards driven by Smoothieware.  
+With the UPA minimal Board, common 20x4 LCDs can be used with Smoothieware.
 
 
 The Board is developed in iterations: starting with a Breadboard 1st iteration, a perforated-board 2nd iteration and  a PCB 3d iteration
 
 ---
-Block Diagram
+**Block Diagram**
 
 
 <img
@@ -31,7 +30,7 @@ width="400"
 />
 
 ---
-1st  iteration: with Arduino-Nano on breadboard, to be replaced with the Minimal version
+**1st  iteration:** with Arduino-Nano on breadboard, to be replaced with the Minimal version
 
 
 <img
@@ -41,7 +40,7 @@ width="400"
 />
 
 ---
-2nd iteration: Minimal Schematic implemented in a 43mm x 33mm n-Blocks perforated board
+**2nd iteration:** Minimal Schematic implemented in a 43mm x 33mm n-Blocks perforated board
 
 
 <img
@@ -55,7 +54,7 @@ width="600"
 />
 
 ---
-3nd iteration: Minimal Schematic implemented in a 43mm x 33mm n-Blocks form factor PCB [UPA-DIP](https://github.com/nikoschalikias/UPA-DIP)
+**3nd iteration:** Minimal Schematic implemented in a 43mm x 33mm n-Blocks form factor PCB [UPA-DIP](https://github.com/nikoschalikias/UPA-DIP)
 
 
 <img
@@ -84,8 +83,8 @@ width="200"
 
 ---
 
-Notes on compilation
----------------------
+###### Nikos notes on compilation
+
 To have a succesful compilation with Arduino IDE 1.8.11, for the Parallel LCD, I did the following:
 * Included all dependencies in the project folder
 * Changed some instances like #include <Encoder.h>, to #include "Encoder.h"
@@ -97,7 +96,7 @@ Links:
 * https://github.com/nikoschalikias/firm-universal-panel-adapter
 
 ---
-Below is the readme file from [wolfmanjm firmware: universal-panel-adapter](https://github.com/wolfmanjm/universal-panel-adapter)
+Below is a copy of the  README file from [wolfmanjm firmware: universal-panel-adapter](https://github.com/wolfmanjm/universal-panel-adapter)
 
 universal-panel-adapter
 =======================
