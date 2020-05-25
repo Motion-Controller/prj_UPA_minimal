@@ -4,7 +4,7 @@
 
 
 ---
-###### The Problem:  
+###### The Problem:
 [Smoothieware](http://smoothieware.org/smoothieboard) does not have an option for driving character LCDs with Parallel interface. It can only drive graphical SPI LCDs.
 This is probably due to lack of GPIO pins (Ethernet functionality is using a lot of GPIO…)
 

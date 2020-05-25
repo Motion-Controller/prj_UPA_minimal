@@ -20,4 +20,5 @@ Add snapshot picture from compilation
 Add photo from arduino programming boards setup
 Add LCD purchasing links from standard suppliers
 x Reduce image resolution for Cleaner Block diagram
+x Add arduino-cli build
 
