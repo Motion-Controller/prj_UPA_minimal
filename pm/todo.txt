@@ -21,4 +21,5 @@ Add photo from arduino programming boards setup
 Add LCD purchasing links from standard suppliers
 x Reduce image resolution for Cleaner Block diagram
 x Build with arduino-cli
+Test binary created from arduino-cli
 

@@ -83,7 +83,7 @@ width="200"
 
 ---
 
-##### Nikos notes on compilation   
+##### Nikos notes on first time compilation   
 **Arduino IDE 1.8.11**
 
 To have a succesful compilation with Arduino IDE 1.8.11, for the Parallel LCD, I did the following:
@@ -97,17 +97,22 @@ Links:
 * https://github.com/nikoschalikias/firm-universal-panel-adapter
 
 ---
+##### Nikos notes on build without the Arduino IDE 
+**arduino-cli 0.1**  
 
-**arduino-cli 0.1**
-I managed to build with arduino-cli (easier than using the IDE :-) )
+My intention was to use a windows command file to automate the building process from command line.  
+Then I discovered the arduino-cli, which seems to work smmothly, so  
+I managed to build with arduino-cli (easier than using the IDE :-) )     
+
 I downloaded  the Nightly Windows 64 bit binary [here](https://arduino.github.io/arduino-cli/installation/) at 'Download a nightly build' section  
-and copied '''arduino-cli.exe''' to project folder (temporary...). It is 12MBytes so I excluded (ignore) it from version control.
-then following [arduino-cli gewtting started](https://arduino.github.io/arduino-cli/getting-started/) I set up the arduino environment...  
+and  
+copied '''arduino-cli.exe''' to project folder root (temporary...). It is 12MBytes so I excluded (ignore) it from version control.    
+Then following [arduino-cli getting started](https://arduino.github.io/arduino-cli/getting-started/), I set up the arduino environment...  
 ```
 arduino-cli config init
 ```
 probably above is not needed.  
-instal avr tools...
+Install avr tools...
 ```
 cli core install arduino:avr
 ```
@@ -120,7 +125,7 @@ arduino-cli core list
     arduino:avr 1.8.2     1.8.2  Arduino AVR Boards
     esp32:esp32 1.0.4     1.0.4
 ```
-....And finnaly compile:
+...And finally compile:
 ```	
 arduino-cli compile --fqbn arduino:avr:uno prj_UPA_minimal.ino
 	Sketch uses 4802 bytes (14%) of program storage space. Maximum is 32256 bytes.
