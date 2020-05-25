@@ -83,7 +83,8 @@ width="200"
 
 ---
 
-###### Nikos notes on compilation
+##### Nikos notes on compilation   
+**Arduino IDE 1.8.11**
 
 To have a succesful compilation with Arduino IDE 1.8.11, for the Parallel LCD, I did the following:
 * Included all dependencies in the project folder
@@ -96,6 +97,41 @@ Links:
 * https://github.com/nikoschalikias/firm-universal-panel-adapter
 
 ---
+
+**arduino-cli 0.1**
+I managed to build with arduino-cli (easier than using the IDE :-) )
+I downloaded  the Nightly Windows 64 bit binary [here](https://arduino.github.io/arduino-cli/installation/) at 'Download a nightly build' section  
+and copied '''arduino-cli.exe''' to project folder (temporary...). It is 12MBytes so I excluded (ignore) it from version control.
+then following [arduino-cli gewtting started](https://arduino.github.io/arduino-cli/getting-started/) I set up the arduino environment...  
+```
+arduino-cli config init
+```
+probably above is not needed.  
+instal avr tools...
+```
+cli core install arduino:avr
+```
+...then list the installed platforms...
+```
+arduino-cli core list
+    F:\prj_soft\repo.arduino\prj_UPA_minimal - Copy>arduino-cli core list
+    ID          Installed Latest Name
+    STM32:stm32 1.8.0     1.8.0
+    arduino:avr 1.8.2     1.8.2  Arduino AVR Boards
+    esp32:esp32 1.0.4     1.0.4
+```
+....And finnaly compile:
+```	
+arduino-cli compile --fqbn arduino:avr:uno prj_UPA_minimal.ino
+	Sketch uses 4802 bytes (14%) of program storage space. Maximum is 32256 bytes.
+	Global variables use 1336 bytes (65%) of dynamic memory, leaving 712 bytes for local variables. Maximum is 2048 bytes.
+```
+
+
+
+---
+
+
 Below is a copy of the  README file from [wolfmanjm firmware: universal-panel-adapter](https://github.com/wolfmanjm/universal-panel-adapter)
 
 universal-panel-adapter
