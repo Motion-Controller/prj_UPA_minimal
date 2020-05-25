@@ -60,15 +60,25 @@ width="600"
 
 <img
 src="doc/PCB-01.JPG"
-width="200"
+width="150"
 title="pcb 3d model top side"
 /> &nbsp;&nbsp; <img
 src="doc/PCB-01.JPG"
 title="pcb 3d model bottom side"
-width="200"
+width="150"
 /> &nbsp;&nbsp; <img
 src="doc/PCB-03.JPG"
-title="pcb 2D"
+title="pcb routing"
+width="150"
+/>
+
+<img
+src="doc/LCD-ASM-01.JPG"
+title="1st iteration implementation"
+width="300"
+/> <img
+src="doc/LCD-ASM-02.JPG"
+title="1st iteration implementation"
 width="200"
 />
 
