@@ -62,11 +62,15 @@ src="doc/PCB-01.JPG"
 width="150"
 title="pcb 3d model top side"
 /> &nbsp;&nbsp; <img
-src="doc/PCB-01.JPG"
+src="doc/PCB-02.JPG"
 title="pcb 3d model bottom side"
 width="150"
 /> &nbsp;&nbsp; <img
 src="doc/PCB-03.JPG"
+title="pcb routing"
+width="150"
+/> &nbsp;&nbsp; <img
+src="doc/PCB-04.JPG"
 title="pcb routing"
 width="150"
 />
@@ -80,6 +84,22 @@ src="doc/LCD-ASM-02.JPG"
 title="1st iteration implementation"
 width="200"
 />
+
+---
+**Integration:** 3D model of a 3Dprinter controller with UPA-DAP
+
+
+<img
+src="doc/UPA-DIP-Integrated-01.JPG"
+width="400"
+title="pcb 3d model top side"
+/> &nbsp;&nbsp; <img
+src="doc/UPA-DIP-Integrated-02.JPG"
+title="pcb 3d model bottom side"
+width="400"
+/> &nbsp;&nbsp; 
+
+
 
 ---
 
@@ -101,12 +121,12 @@ Links:
 **arduino-cli 0.1**  
 
 My intention was to use a windows command file to automate the building process from command line.  
-Then I discovered the arduino-cli, which seems to work smmothly, so  
-I managed to build with arduino-cli (easier than using the IDE :-) )     
+Then I discovered the arduino-cli, which seems to work smoothly, so  
+I managed to build with arduino-cli (easier than using the IDE) as below:     
 
 I downloaded  the Nightly Windows 64 bit binary [here](https://arduino.github.io/arduino-cli/installation/) at 'Download a nightly build' section  
 and  
-copied '''arduino-cli.exe''' to project folder root (temporary...). It is 12MBytes so I excluded (ignore) it from version control.    
+copied `arduino-cli.exe` to project folder root (temporary). It is 12MBytes so I excluded (added to .gitignore) it from version control.    
 Then following [arduino-cli getting started](https://arduino.github.io/arduino-cli/getting-started/), I set up the arduino environment...  
 ```
 arduino-cli config init
