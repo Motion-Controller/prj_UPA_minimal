@@ -40,11 +40,11 @@ width="400"
 />
 
 ---
-**2nd iteration:** Minimal Schematic implemented in a 43mm x 33mm n-Blocks perforated board
+**2nd iteration:** Minimal Schematic implementation in a 43mm x 33mm n-Blocks perforated board
 
 
 <img
-src="doc/minimal-schematic.JPG"
+src="doc/sch.JPG"
 width="600"
 title="minimal Schematic"
 /> &nbsp;&nbsp; <img
@@ -155,6 +155,117 @@ arduino-cli compile --fqbn arduino:avr:uno prj_UPA_minimal.ino
 
 
 ---
+
+##### Nikos notes on uploading with AVR-MKII from command line   
+**Arduino IDE 1.8.11**
+
+<img
+src="doc/flash-programming-setup-01.JPG"
+title="Microprocessor Programming Setup"
+width="400"
+/>
+
+
+Uploading to Microprocessor (ATmega328AP) Flash is accomplished with AVRDUDE, which comes with Arduino IDE:  
+In my installation avrdude.exe is here: ```"C:\Program Files (x86)\Arduino\hardware\tools\avr\bin\avrdude"```  
+
+The configuration file for AVRDUDE is here: ```"C:\Program Files (x86)\Arduino\hardware\tools\avr\etc\avrdude.conf"```
+and is created from Arduino IDE
+
+I call burn-hex.cmd with content:  
+```"C:\Program Files (x86)\Arduino\hardware\tools\avr\bin\avrdude" -C "C:\Program Files (x86)\Arduino\hardware\tools\avr\etc\avrdude.conf" -v -p atmega328P -c stk500v2 -Pusb -U flash:w:"F:\prj_soft\repo.arduino\prj_UPA_minimal\prj_UPA_minimal.ino.standard.hex":i```   
+This creates below output on the screen or in a file using ```burn-hex.cmd > a.txt 2>&1``` 
+
+
+```
+F:\prj_soft\repo.arduino\prj_UPA_minimal>"C:\Program Files (x86)\Arduino\hardware\tools\avr\bin\avrdude" -C "C:\Program Files (x86)\Arduino\hardware\tools\avr\etc\avrdude.conf" -v -p atmega328P -c stk500v2 -Pusb -U flash:w:"F:\prj_soft\repo.arduino\prj_UPA_minimal\prj_UPA_minimal.ino.standard.hex":i  
+
+avrdude: Version 6.3-20190619
+         Copyright (c) 2000-2005 Brian Dean, http://www.bdmicro.com/
+         Copyright (c) 2007-2014 Joerg Wunsch
+
+         System wide configuration file is "C:\Program Files (x86)\Arduino\hardware\tools\avr\etc\avrdude.conf"
+
+         Using Port                    : usb
+         Using Programmer              : stk500v2
+avrdude: usbdev_open(): Found AVRISP mkII, serno: FFFFFFFFFFFF
+         AVR Part                      : ATmega328P
+         Chip Erase delay              : 9000 us
+         PAGEL                         : PD7
+         BS2                           : PC2
+         RESET disposition             : dedicated
+         RETRY pulse                   : SCK
+         serial program mode           : yes
+         parallel program mode         : yes
+         Timeout                       : 200
+         StabDelay                     : 100
+         CmdexeDelay                   : 25
+         SyncLoops                     : 32
+         ByteDelay                     : 0
+         PollIndex                     : 3
+         PollValue                     : 0x53
+         Memory Detail                 :
+
+                                  Block Poll               Page                       Polled
+           Memory Type Mode Delay Size  Indx Paged  Size   Size #Pages MinW  MaxW   ReadBack
+           ----------- ---- ----- ----- ---- ------ ------ ---- ------ ----- ----- ---------
+           eeprom        65    20     4    0 no       1024    4      0  3600  3600 0xff 0xff
+           flash         65     6   128    0 yes     32768  128    256  4500  4500 0xff 0xff
+           lfuse          0     0     0    0 no          1    0      0  4500  4500 0x00 0x00
+           hfuse          0     0     0    0 no          1    0      0  4500  4500 0x00 0x00
+           efuse          0     0     0    0 no          1    0      0  4500  4500 0x00 0x00
+           lock           0     0     0    0 no          1    0      0  4500  4500 0x00 0x00
+           calibration    0     0     0    0 no          1    0      0     0     0 0x00 0x00
+           signature      0     0     0    0 no          3    0      0     0     0 0x00 0x00
+
+         Programmer Type : STK500V2
+         Description     : Atmel STK500 Version 2.x firmware
+         Programmer Model: AVRISP mkII
+         Hardware Version: 1
+         Firmware Version Master : 1.17
+         Vtarget         : 3.5 V
+         SCK period      : 1.00 us
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.01s
+
+avrdude: Device signature = 0x1e950f (probably m328p)
+avrdude: safemode: lfuse reads as FF
+avrdude: safemode: hfuse reads as DE
+avrdude: safemode: efuse reads as FD
+avrdude: NOTE: "flash" memory has been specified, an erase cycle will be performed
+         To disable this feature, specify the -D option.
+avrdude: erasing chip
+avrdude: reading input file "F:\prj_soft\repo.arduino\prj_UPA_minimal\prj_UPA_minimal.ino.standard.hex"
+avrdude: writing flash (4802 bytes):
+
+Writing | ################################################## | 100% 0.36s
+
+avrdude: 4802 bytes of flash written
+avrdude: verifying flash memory against F:\prj_soft\repo.arduino\prj_UPA_minimal\prj_UPA_minimal.ino.standard.hex:
+avrdude: load data flash data from input file F:\prj_soft\repo.arduino\prj_UPA_minimal\prj_UPA_minimal.ino.standard.hex:
+avrdude: input file F:\prj_soft\repo.arduino\prj_UPA_minimal\prj_UPA_minimal.ino.standard.hex contains 4802 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 0.28s
+
+avrdude: verifying ...
+avrdude: 4802 bytes of flash verified
+
+avrdude: safemode: lfuse reads as FF
+avrdude: safemode: hfuse reads as DE
+avrdude: safemode: efuse reads as FD
+avrdude: safemode: Fuses OK (E:FD, H:DE, L:FF)
+
+avrdude done.  Thank you.
+```
+
+
+
+---
+
+
 
 
 Below is a copy of the  README file from [wolfmanjm firmware: universal-panel-adapter](https://github.com/wolfmanjm/universal-panel-adapter)

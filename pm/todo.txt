@@ -16,8 +16,9 @@ x Program Atmega328p DIP ics
 x Create Minimal Schematic for Simple 43x33mm board that interfaces LCD to n-PRO-3DP
 x Create Minimal Implementation Block Diagram
 x Add slideck content to readme.md
-Add snapshot picture from compilation
-Add photo from arduino programming boards setup
+x Add snapshot picture from compilation
+x README.MD Add photo from arduino programming boards setup
+x README.MD Document AVR MKII upload from command-line
 Add LCD purchasing links from standard suppliers
 x Reduce image resolution for Cleaner Block diagram
 x Build with arduino-cli
