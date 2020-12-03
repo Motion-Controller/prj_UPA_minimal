@@ -1,0 +1,32 @@
+board_manager:
+  additional_urls:
+  - https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/package_damellis_attiny_index.json
+  - http://download.labs.mediatek.com/package_mtk_linkitone_index.json
+  - http://arduino.esp8266.com/stable/package_esp8266com_index.json
+  - http://downloads.femtoduino.com/ArduinoCore-atsamd21e18a/package_atsamd21e18a-release-build_index.json
+  - https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
+  - https://raw.githubusercontent.com/sparkfun/Arduino_Boards/nrf5/IDE_Board_Manager/package_sparkfun_index.json
+  - https://raw.githubusercontent.com/CONTROLLINO-PLC/CONTROLLINO_Library/master/Boards/package_ControllinoHardware_index.json
+  - https://raw.githubusercontent.com/chipKIT32/chipKIT-core/master/package_chipkit_index.json
+  - https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/package_stm_index.json
+  - https://macchina.cc/package_macchina_index.json
+  - https://sandeepmistry.github.io/arduino-nRF5/package_nRF5_boards_index.json
+  - https://gitee.com/dfrobot/FireBeetle-ESP32/raw/master/package_esp32_index.json
+  - http://digistump.com/package_digistump_index.json
+  - https://dl.espressif.com/dl/package_esp32_index.json
+  - https://www.4dsystems.com.au/media/downloads/4Duino/package_4dsystems_index.json
+  - http://apps.industrialshields.com/main/arduino/boards/package_industrialshields_index.json
+  - https://raw.githubusercontent.com/feilipu/feilipu.github.io/master/package_goldilocks_index.json
+daemon:
+  port: "50051"
+directories:
+  data: C:\Users\nikolaos.chalikias\AppData\Local\Arduino15
+  downloads: C:\Users\nikolaos.chalikias\AppData\Local\Arduino15\staging
+  user: F:\prj_soft\test
+logging:
+  file: ""
+  format: text
+  level: info
+telemetry:
+  addr: :9090
+  enabled: true
