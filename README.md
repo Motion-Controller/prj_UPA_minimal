@@ -266,7 +266,31 @@ avrdude done.  Thank you.
 
 ---
 
+##### AVRISP-MKII USB troubleshooting
 
+It is possible while the avrdude works OK to start having trouble, not recognizing AVRISP-mkII USB port having a message as below:
+
+```
+avrdude: Version 6.3-20190619
+         Copyright (c) 2000-2005 Brian Dean, http://www.bdmicro.com/
+         Copyright (c) 2007-2014 Joerg Wunsch
+
+         System wide configuration file is "C:\Program Files (x86)\Arduino\hardware\tools\avr\etc\avrdude.conf"
+
+         Using Port                    : usb
+         Using Programmer              : stk500v2
+avrdude: usbdev_open(): did not find any USB device "usb" (0x03eb:0x2104)
+
+avrdude done.  Thank you.
+```
+
+I was able to fix this issue with **Zadig** as suggested  [here](https://www.avrfreaks.net/forum/unable-connect-avrisp-mkii-avrdude), replacing WinDriver with libsub for AVRISP-mkII
+
+<img
+src="doc/20.JPG"
+title="Microprocessor Programming Setup"
+width="600"
+/>
 
 
 Below is a copy of the  README file from [wolfmanjm firmware: universal-panel-adapter](https://github.com/wolfmanjm/universal-panel-adapter)
