@@ -1,4 +1,4 @@
-# prj_UPA_minimal: 
+# [prj_UPA_minimal](https://github.com/Motion-Controller/prj_UPA_minimal): 
 ####  Easy to get, parallel 20x4 LCD, with Smoothieware 
 ####  Minimal and tidy hardware for Universal Panel Adapter firmware 
 
@@ -99,6 +99,26 @@ src="doc/UPA-DIP-Integrated-02.JPG"
 title="pcb 3d model bottom side"
 width="400"
 /> &nbsp;&nbsp; 
+
+----
+
+Testing 3d iteration PCB
+* Display is working :heavy_check_mark:
+* Encoder is working :x:
+* 3D printing is working :x:
+
+<img
+src="doc/22.JPG"
+title="1st iteration implementation"
+width="600"
+/>
+
+<img
+src="doc/23.JPG"
+title="1st iteration implementation"
+width="800"
+/>
+
 
 
 
@@ -266,7 +286,7 @@ avrdude done.  Thank you.
 
 ---
 
-##### AVRISP-MKII USB troubleshooting
+##### Nikos Notes on: AVRISP-MKII USB troubleshooting
 
 It is possible while the avrdude works OK to start having trouble, not recognizing AVRISP-mkII USB port having a message as below:
 
