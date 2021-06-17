@@ -124,7 +124,11 @@ width="900"
 
 * [PEL12D - 12 mm Encoder with Switch and Illuminated Shaft](https://gr.mouser.com/datasheet/2/54/PEL12D-777459.pdf)
 
-
+<img
+src="doc/24.JPG"
+title="1st iteration implementation"
+width="300"
+/>
 
 ---
 
