@@ -45,7 +45,7 @@ width="400"
 
 
 <img
-src="doc/sch.JPG"
+src="doc/sch2.JPG"
 width="600"
 title="minimal Schematic"
 /> &nbsp;&nbsp; <img
@@ -314,7 +314,7 @@ width="600"
 
 ----
 
-In device manager AVRISP mkII should appear under libusb (...and not under Jungo) as below:
+In device manager AVRISP mkII should appear not under Jungo, but under libusb as below:
 
 <img
 src="doc/21B.JPG"
