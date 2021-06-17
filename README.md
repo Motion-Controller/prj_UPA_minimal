@@ -103,8 +103,9 @@ width="400"
 ----
 
 Testing 3d iteration PCB
+* Connected to a smoothieware controlled board (n-3DP) :heavy_check_mark:
 * Display is working :heavy_check_mark:
-* Encoder is working :x:
+* Encoder is working :heavy_check_mark:
 * 3D printing is working :x:
 
 <img
@@ -119,6 +120,9 @@ title="1st iteration implementation"
 width="900"
 />
 
+----
+
+* [PEL12D - 12 mm Encoder with Switch and Illuminated Shaft](https://gr.mouser.com/datasheet/2/54/PEL12D-777459.pdf)
 
 
 
