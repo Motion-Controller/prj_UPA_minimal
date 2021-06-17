@@ -292,7 +292,19 @@ title="Microprocessor Programming Setup"
 width="600"
 />
 
+----
 
+In device manager AVRISP mkII should appear under libusb:
+
+<img
+src="doc/21.JPG"
+title="Microprocessor Programming Setup"
+width="300"
+/>
+
+
+
+----
 Below is a copy of the  README file from [wolfmanjm firmware: universal-panel-adapter](https://github.com/wolfmanjm/universal-panel-adapter)
 
 universal-panel-adapter
