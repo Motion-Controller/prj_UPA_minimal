@@ -317,7 +317,7 @@ width="600"
 In device manager AVRISP mkII should appear under libusb (...and not under Jungo) as below:
 
 <img
-src="doc/21.JPG"
+src="doc/21B.JPG"
 title="Microprocessor Programming Setup"
 width="300"
 />
