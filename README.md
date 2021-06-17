@@ -27,7 +27,7 @@ The Board is developed in iterations: starting with a Breadboard 1st iteration, 
 
 <img
 src="doc/BLOCK-DIAGRAM-01.jpg"
-width="400"
+width="600"
 />
 
 ---
@@ -37,7 +37,7 @@ width="400"
 <img
 src="doc/UniversalPanelAdapter.N-PRO-3DP-01.jpg"
 title="1st iteration implementation"
-width="400"
+width="900"
 />
 
 ---
@@ -46,7 +46,7 @@ width="400"
 
 <img
 src="doc/sch2.JPG"
-width="600"
+width="900"
 title="minimal Schematic"
 /> &nbsp;&nbsp; <img
 src="doc/minimal-perforated-board.jpg"
@@ -116,7 +116,7 @@ width="600"
 <img
 src="doc/23.JPG"
 title="1st iteration implementation"
-width="800"
+width="900"
 />
 
 
@@ -183,7 +183,7 @@ arduino-cli compile --fqbn arduino:avr:uno prj_UPA_minimal.ino
 <img
 src="doc/flash-programming-setup-01.JPG"
 title="Microprocessor Programming Setup"
-width="400"
+width="500"
 />
 
 
@@ -309,7 +309,7 @@ I was able to fix this issue with **Zadig** as suggested  [here](https://www.avr
 <img
 src="doc/20.JPG"
 title="Microprocessor Programming Setup"
-width="600"
+width="700"
 />
 
 ----
@@ -319,7 +319,7 @@ In device manager AVRISP mkII should appear not under Jungo, but under libusb as
 <img
 src="doc/21B.JPG"
 title="Microprocessor Programming Setup"
-width="300"
+width="400"
 />
 
 
